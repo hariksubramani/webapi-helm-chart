@@ -3,12 +3,12 @@ entries:
   webapi:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-09-27T01:47:07.0747236+02:00"
+    created: "2021-09-27T01:55:43.8302445+02:00"
     description: A Helm chart for Kubernetes
-    digest: ff3bac1fb3368a48a1f6d831e1befb9a3f82f76e23080286bec79c2db738668e
+    digest: 0e0920d4e2acc157f00d98ba20b6ac859c8313f55f30bce00f1e82fac4bd770b
     name: webapi
     type: application
     urls:
     - https://hariksubramani.github.io/webapi-helm-chart/webapi-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-27T01:47:07.0686246+02:00"
+generated: "2021-09-27T01:55:43.8229982+02:00"
