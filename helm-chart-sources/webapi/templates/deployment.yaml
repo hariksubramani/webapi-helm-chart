@@ -44,7 +44,7 @@ spec:
       {{- end }}
       {{- with .Values.volumes }}      
       volumes:
-      {{- toYaml .Values.volumes | nindent 6 }}
+      {{- toYaml . | nindent 6 }}
       {{- end }}
       containers:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
