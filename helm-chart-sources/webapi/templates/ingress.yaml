@@ -7,10 +7,14 @@ metadata:
   name: {{ $fullName }}
   namespace: {{ .Values.namespace }}
 spec:
+  {{- with .Values.ingress.hosts }}
   hosts:
-  {{- toYaml .Values.ingress.hosts | nindent 2 }}  
+  {{- toYaml . | nindent 2 }}  
+  {{- end }}
+  {{- with .Values.ingress.gateway }}
   gateways:
-  - {{ .Values.ingress.gateway }}
+  {{- toYaml . | nindent 2 }}  
+  {{- end }}
   http:  
   - match:
     - uri:
